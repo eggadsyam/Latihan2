@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="blood_array">
+        <item>Blood Type</item>
+    </string-array>
+    <string-array name="reshus_array">
+        <item>Reshus</item>
+    </string-array>
+    <string-array name="job_array">
+        <item>Job</item>
+    </string-array>
+</resources>

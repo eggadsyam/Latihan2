@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verify_MainActivity"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/verify_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="150dp">
+
+        <TextView
+            android:id="@+id/txt_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify your Account"
+            android:textAlignment="center"
+            android:fontFamily="@font/rubik_regular"
+            android:textSize="30dp"></TextView>
+
+        <TextView
+            android:id="@+id/txt_we"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:text="We have send verification code to your email"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:layout_below="@id/txt_verify"
+            android:fontFamily="@font/rubik_regular"
+            android:paddingBottom="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/edittext_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_regular"
+            android:hint="enter verificatin code here..."
+            android:textAlignment="center"
+            android:layout_below="@id/txt_we"></EditText>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:fontFamily="@font/nunito_bold"
+            android:background="@drawable/btn_custom_login"
+            android:text="send"
+            android:layout_below="@id/edittext_verify"
+            android:onClick="btn_send"></Button>
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="doesn't get the code ? Resend"
+            android:textAlignment="center"
+            android:fontFamily="@font/rubik_regular"
+            android:textSize="12dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/btn_send"></TextView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context=".Register_MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_awal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <View
+            android:id="@+id/fucused"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/layout_registrasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/layout_username_reg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/edttxt_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Username"
+                            android:textSize="11dp"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:fontFamily="@font/rubik_regular"/>
+
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/layout_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout_username_reg">
+
+                        <EditText
+                            android:id="@+id/edttxt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:textSize="12dp"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:fontFamily="@font/rubik_regular"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/layout_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_email">
+
+                        <EditText
+                            android:id="@+id/edttxt_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Phone Number"
+                            android:textSize="11dp"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:fontFamily="@font/rubik_regular" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_phone"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:textSize="11dp"
+                            android:paddingRight="100dp"
+                            android:checked="true"
+                            android:buttonTint="@color/background"
+                            android:fontFamily="@font/rubik_regular"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:textSize="11dp"
+                            android:fontFamily="@font/rubik_regular"/>
+
+                    </RadioGroup>
+
+                    <Spinner
+                        android:id="@+id/spin_blood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radio"
+                        android:entries="@array/blood_array"
+                        android:layout_alignParentLeft="true"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/reshus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/radio"
+                        android:entries="@array/reshus_array"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/rubik_regular"></Spinner>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/layout_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spin_blood"
+                        android:paddingTop="10dp">
+
+                        <EditText
+                            android:id="@+id/edttxt_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:textSize="11dp"
+                            android:inputType="textVisiblePassword"
+                            android:singleLine="true"
+                            android:fontFamily="@font/rubik_regular" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/retype_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_password">
+
+                        <EditText
+                            android:id="@+id/edttxt_retype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Retype Password"
+                            android:textSize="11dp"
+                            android:inputType="textVisiblePassword"
+                            android:singleLine="true"
+                            android:fontFamily="@font/rubik_regular" />
+                    </android.support.design.widget.TextInputLayout>
+                    <RadioGroup
+                        android:id="@+id/radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/retype_password"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Personal"
+                            android:textSize="11dp"
+                            android:paddingRight="80dp"
+                            android:checked="true"
+                            android:buttonTint="@color/background"
+                            android:fontFamily="@font/rubik_regular"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Organization"
+                            android:textSize="11dp"
+                            android:fontFamily="@font/rubik_regular"/>
+
+                    </RadioGroup>
+                    <Spinner
+                        android:id="@+id/spin_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/job_array"
+                        android:layout_below="@id/radio2"
+                        android:layout_centerInParent="true"></Spinner>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/layout_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/radio2"
+                        android:paddingTop="30dp">
+
+                        <EditText
+                            android:id="@+id/edttxt_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Home Address"
+                            android:textSize="11dp"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:fontFamily="@font/rubik_regular" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/layout_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_address">
+
+                        <EditText
+                            android:id="@+id/edttxt_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Default Location"
+                            android:textSize="11dp"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:fontFamily="@font/rubik_regular" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            >
+
+            <CheckBox
+                android:id="@+id/chk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:checked="true"
+                android:text="Agree with Terms and Conditions"
+                android:fontFamily="@font/rubik_regular"/>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_custom_register"
+                android:text="REGISTER"
+                android:textAllCaps="false"
+                android:textColor="#43b3e6"
+                android:textSize="16dp"
+                android:onClick="btn_register"
+                android:fontFamily="@font/nunito_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/button"
+                android:text=""></TextView>
+        </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

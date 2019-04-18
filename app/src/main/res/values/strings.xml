@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Layouting 2</string>
+    <string name="register">
+        <![CDATA[
+        "doesn't have account ? <b>Register</b>" ]]>
+    </string>
+</resources>

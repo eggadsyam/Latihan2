@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">#43b3e6</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#43b3e6</item>
+        <item name="colorPrimaryDark">#43b3e6</item>
+        <item name="colorAccent">#d1d2d4</item>
+    </style>
+    <style name="AppTheme3" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@drawable/ic_header</item>
+        <item name="colorPrimaryDark">#d1d2d4</item>
+        <item name="colorAccent">#d1d2d4</item>
+    </style>
+    <style name="AppTheme4" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">#43b3e6</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+    <style name="EditTextTheme" parent="TextAppearance.Design.Hint">
+        <item name="android:fontFamily">@font/rubik_regular</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlHighlight">@android:color/white</item>
+    </style>
+</resources>

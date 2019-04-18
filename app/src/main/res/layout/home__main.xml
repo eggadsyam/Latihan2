@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Home_MainActivity">
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_header_profile" />
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/clc"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:civ_border_width="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            app:civ_border_color="@color/background"
+            android:src="@drawable/profil_gbr"/>
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/background"
+            android:text="Egga Dinarul Syam"
+            android:textSize="20dp"
+            android:layout_below="@+id/clc"
+            android:fontFamily="@font/rubik_regular"/>
+
+        <TextView
+            android:id="@+id/bloodtype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:text="Blood type : O"
+            android:textSize="16dp"
+            android:layout_below="@+id/nama"
+            android:fontFamily="@font/rubik_regular"/>
+
+        <TextView
+            android:id="@+id/tujuh_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/background"
+            android:paddingTop="10dp"
+            android:paddingLeft="40dp"
+            android:text="75"
+            android:textSize="20dp"
+            android:layout_below="@+id/bloodtype"
+            android:fontFamily="@font/rubik_regular"/>
+
+        <TextView
+            android:id="@+id/satu_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bloodtype"
+            android:layout_centerInParent="true"
+            android:paddingTop="10dp"
+            android:text="100"
+            android:textAlignment="center"
+            android:textColor="@color/background"
+            android:textSize="20dp"
+            android:fontFamily="@font/rubik_regular"/>
+
+        <TextView
+            android:id="@+id/tiga_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bloodtype"
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"
+            android:paddingRight="40dp"
+            android:text="330"
+            android:textAlignment="center"
+            android:textColor="@color/background"
+            android:textSize="20dp"
+            android:fontFamily="@font/rubik_regular"/>
+
+        <TextView
+            android:id="@+id/give_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/black"
+            android:paddingTop="10dp"
+            android:paddingLeft="40dp"
+            android:text="BLOOD GIVE"
+            android:textSize="11dp"
+            android:layout_below="@+id/tiga_txt"
+            android:fontFamily="@font/rubik_regular"/>
+
+        <TextView
+            android:id="@+id/receive_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tiga_txt"
+            android:layout_centerInParent="true"
+            android:paddingTop="10dp"
+            android:text="BLOOD RECEIVE"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="11dp"
+            android:fontFamily="@font/rubik_regular"/>
+
+        <TextView
+            android:id="@+id/tq_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tiga_txt"
+            android:layout_alignParentRight="true"
+            android:paddingTop="10dp"
+            android:paddingRight="40dp"
+            android:text="THANKS"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="11dp"
+            android:fontFamily="@font/rubik_regular"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:layout_below="@id/tq_txt">
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/cari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_search_donor"/>
+
+            <TextView
+                android:id="@+id/scrdonor_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_alignParentLeft="true"
+                android:textColor="@android:color/black"
+                android:text="  Search Donor"
+                android:textSize="14dp"
+                android:layout_below="@+id/org"
+                android:fontFamily="@font/rubik_regular"/>
+            <TextView
+                android:id="@+id/bldneed_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/black"
+                android:text="Blood Need     "
+                android:textSize="14dp"
+                android:layout_below="@+id/org"
+                android:fontFamily="@font/rubik_regular"/>
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/org"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_blood_needed"/>
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/srt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bldneed_txt"
+                android:background="@drawable/ic_message"/>
+            <TextView
+                android:id="@+id/msg_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_alignParentLeft="true"
+                android:textColor="@android:color/black"
+                android:text="       Message"
+                android:textSize="14dp"
+                android:layout_below="@+id/air"
+                android:fontFamily="@font/rubik_regular"/>
+            <TextView
+                android:id="@+id/dnr_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/black"
+                android:text="Donor History  "
+                android:textSize="14dp"
+                android:layout_below="@+id/air"
+                android:fontFamily="@font/rubik_regular"/>
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/bldneed_txt"
+                android:background="@drawable/ic_donor_history"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
